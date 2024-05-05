@@ -13,7 +13,7 @@
 
     const person1: owne2 = "bike"
 
-    function getvalue <X,Y> (obj: X, key: Y) {
+    function getvalue <X,Y extends "name" | "age" | "address"> (obj: X, key: Y) {
         return obj[key]
     }
 
