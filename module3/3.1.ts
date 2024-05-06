@@ -23,8 +23,4 @@
   const cat = new Animal('Persian', 'cat', 'af')
 
   cat.makeSound()
-
-
-
-
 }
