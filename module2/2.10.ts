@@ -8,4 +8,19 @@
 
     console.log(arrayOfString)
 
+    type AreaNumber = {
+        height : number;
+        width : number
+    }
+
+    type AreaString<T>  = {
+        [key in keyof T] : T
+    }
+
+    type height = AreaNumber['height']
+
+    const area1 : AreaString<{height : string; width: number}>
+    height : '100'
+    weight : 50
+
 }
