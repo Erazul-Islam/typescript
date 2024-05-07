@@ -4,7 +4,7 @@
     class BankAccount{
        public readonly id : number;
        public name : string;
-       private balance : number
+       protected balance : number
 
         constructor (id : number, name : string, balance : number){
             this.id = id
@@ -20,6 +20,12 @@
             return this.balance
         }
 
+    }
+
+    class studentAccount extends BankAccount{
+        test(){
+            this.balance
+        }
     }
 
     const poorAccount = new BankAccount(111,'Taosif',56000);
